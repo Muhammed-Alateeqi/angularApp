@@ -1,0 +1,26 @@
+<section class="gallery">
+    <div class="container">
+        <div class="row">
+            @for (product of productList; track $index) {
+                <div class="col-md-3 mt-5">
+                    <div class="card-body ">
+                        <img src="assets/images/s-l1600.webp" class="w-100" alt="macbook">
+                        <div class="card">
+                            <h2 class="h6">{{product.pName}}</h2>
+                            <p>{{product.pDesc}}</p>
+                            <p>{{product.pPrice}}$</p>
+                            <h6 class="badge text-bg-secondary"> 1 YEAR WARRANTY</h6>
+                        </div>
+                    </div>
+                </div>
+            }
+            </div>
+        </div>
+
+<p #lazy class="bg-dark text-light m-auto w-50 rounded-3 text-uppercase text-center mt-5">recommended-prodcuts for you !</p>
+<!-- Recomended Design -->
+ @defer (on viewport(lazy)) {
+    <app-recommended-design></app-recommended-design>
+ }
+   
+</section>

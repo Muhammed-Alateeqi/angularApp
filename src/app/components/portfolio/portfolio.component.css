@@ -1,0 +1,21 @@
+.portfolio{
+    height: 100vh;
+    background-color: #fff;
+    text-align: center;
+}
+
+.open-layer{
+    background-color: #0d6dfd4e;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;   
+}
+.image-modal{
+    position: relative;
+    z-index: 4;
+}

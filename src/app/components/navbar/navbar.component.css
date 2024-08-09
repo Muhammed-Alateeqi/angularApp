@@ -1,0 +1,28 @@
+.navbar{
+    padding: 20px 0px;
+}
+
+.bg-body-nav{
+    background:#2c3e50;
+}
+.navbar-brand{
+    font-size: 2rem;
+    font-weight: 500;
+    font-size: 32px;
+
+}
+.nav-link{
+    font-size: 18px;
+}
+.navbar-brand ,.nav-link {
+    color: #fff;
+    font-weight: 500;
+}
+ul li{
+    transition: all ease .2s;
+    margin: 10px;
+}   
+.active-style{
+    background-color: #1abc9c;
+    border-radius: 10px;
+}

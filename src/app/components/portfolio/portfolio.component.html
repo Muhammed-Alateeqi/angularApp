@@ -1,0 +1,32 @@
+<section class="portfolio mt-5">
+    <app-heading-star-style  [portfoliocColor]="'#2c3e50'" [headingTitle]="'portfolio component'"></app-heading-star-style>
+    <div class="container">
+            <div class="row">
+            <div class="col-4 mt-5">
+                <app-portfolio-card  (CardClicked)="ShowImage($event)" [cardImage]="'assets/images/port1.png'"></app-portfolio-card>
+            </div>
+            <div class="col-4 mt-5">
+                <app-portfolio-card (CardClicked)="ShowImage($event)" [cardImage]="'assets/images/port2.png'"></app-portfolio-card>
+            </div>
+            <div class="col-4 mt-5">
+                <app-portfolio-card (CardClicked)="ShowImage($event)" [cardImage]="'assets/images/port3.png'"></app-portfolio-card>
+            </div>
+            <div class="col-4 mt-5">
+                <app-portfolio-card (CardClicked)="ShowImage($event)" [cardImage]="'assets/images/port1.png'"></app-portfolio-card>
+            </div>
+            <div class="col-4 mt-5">
+                <app-portfolio-card (CardClicked)="ShowImage($event)" [cardImage]="'assets/images/port2.png'"></app-portfolio-card>
+            </div>
+            <div class="col-4 mt-5">
+                <app-portfolio-card (CardClicked)="ShowImage($event)" [cardImage]="'assets/images/port3.png'"></app-portfolio-card>
+            </div>
+        </div>
+    </div>
+    @if(imageToggle){
+        <div class="bg-danger col-3">
+            <div class="open-layer" (click)="modalClose($event)">
+                <img src="{{image}}"  class="w-25 opacity-100 " alt="modalImage">
+            </div>
+        </div>
+    }
+</section>

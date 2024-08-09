@@ -1,0 +1,22 @@
+.card-body{
+    border: 1px solid rgba(128, 128, 128, 0.257);
+    padding: 15px;
+    border-radius: 10px;
+    transition:  all ease .3s;
+}
+.card{
+    border: 0;
+    padding: 10px;
+    transition: all ease .3s;
+    background-color: rgba(128, 128, 128, 0.519);
+    color: white;
+
+}
+.card-body:hover .card{
+    background-color: rgba(0, 0, 0, 0.519);
+    
+}
+.card-body:hover {
+    border: 1px solid rgba(69, 204, 228, 0.788);
+    
+}
